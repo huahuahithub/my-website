@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEIJI Outdoor | OEM Outdoor Knives & Custom Camping Tools Manufacturer</title>
+  <meta name="description" content="MEIJI Outdoor manufactures OEM outdoor knives, folding knives, fixed blade knives, multi-tools, and future-ready camp cooking and carry gear for global outdoor brands.">
+  <style>
+    :root {
+      --ink: #17201b;
+      --muted: #5b675f;
+      --paper: #f6f4ef;
+      --white: #ffffff;
+      --field: #244438;
+      --pine: #14342a;
+      --brass: #b78943;
+      --line: #ddd8ce;
+      --shadow: 0 18px 45px rgba(20, 52, 42, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 18px clamp(20px, 5vw, 72px);
+      color: var(--white);
+      background: rgba(20, 28, 24, 0.72);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .brand img {
+      width: 92px;
+      height: 34px;
+      object-fit: contain;
+      background: var(--white);
+      padding: 4px 7px;
+      border-radius: 4px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 2vw, 30px);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .nav a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+
+    .nav-cta {
+      color: var(--ink);
+      background: var(--white);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      padding: 128px clamp(22px, 6vw, 86px) 70px;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(10, 24, 18, 0.88) 0%, rgba(10, 24, 18, 0.72) 42%, rgba(10, 24, 18, 0.18) 100%),
+        url("assets/factory-capability.png") center / cover no-repeat;
+    }
+
+    .hero-content {
+      width: min(760px, 100%);
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: #d7c29d;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 22px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 42px;
+    }
+
+    .button-primary {
+      color: var(--ink);
+      background: var(--brass);
+    }
+
+    .button-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.48);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(116px, 1fr));
+      max-width: 760px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .metric {
+      padding: 18px 18px 18px 0;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 13px;
+    }
+
+    section {
+      padding: clamp(58px, 8vw, 96px) clamp(20px, 5vw, 72px);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+      gap: 36px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: clamp(30px, 4.4vw, 52px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-head p,
+    .wide-copy {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .product-card {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .product-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #ebe8e0;
+    }
+
+    .product-body {
+      padding: 20px;
+    }
+
+    .product-body h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .product-body p {
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .spec-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      color: var(--ink);
+      font-size: 13px;
+      list-style: none;
+    }
+
+    .spec-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 8px;
+      border-top: 1px solid #eee9df;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.85fr) minmax(320px, 1.15fr);
+      gap: clamp(30px, 5vw, 64px);
+      align-items: center;
+    }
+
+    .split img {
+      width: 100%;
+      aspect-ratio: 5 / 4;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .capability-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .capability-list li,
+    .process-step,
+    .category-tile,
+    .rfq-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .capability-list li {
+      padding: 18px;
+      color: var(--muted);
+    }
+
+    .capability-list strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+    }
+
+    .process {
+      background: var(--pine);
+      color: var(--white);
+    }
+
+    .process .section-head p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .process-step {
+      padding: 22px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .process-step span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 18px;
+      color: var(--ink);
+      font-weight: 800;
+      background: var(--brass);
+      border-radius: 50%;
+    }
+
+    .process-step h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .process-step p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .category-tile {
+      padding: 26px;
+    }
+
+    .category-tile h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .category-tile p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .dark-cta {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.55fr);
+      gap: 36px;
+      align-items: center;
+      color: var(--white);
+      background: var(--field);
+    }
+
+    .dark-cta p {
+      color: rgba(255, 255, 255, 0.74);
+    }
+
+    .rfq-box {
+      padding: 26px;
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+
+    .rfq-box h3 {
+      margin-bottom: 14px;
+    }
+
+    .rfq-box ul {
+      display: grid;
+      gap: 9px;
+      margin: 0 0 20px;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .rfq-box .button {
+      width: 100%;
+    }
+
+    footer {
+      padding: 30px clamp(20px, 5vw, 72px);
+      color: rgba(255, 255, 255, 0.78);
+      background: #101713;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner a {
+      color: var(--white);
+    }
+
+    @media (max-width: 1040px) {
+      .product-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-head,
+      .split,
+      .dark-cta {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .site-header {
+        position: absolute;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+
+      .nav a:not(.nav-cta) {
+        white-space: nowrap;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 184px;
+      }
+
+      .hero-metrics,
+      .product-grid,
+      .capability-list,
+      .process-grid,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="https://www.meijioutdoor.com/">
+      <img src="assets/meiji-logo.jpg" alt="MEIJI Outdoor logo">
+      <span>MEIJI Outdoor</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#products">Products</a>
+      <a href="#oem">OEM Capability</a>
+      <a href="#process">Process</a>
+      <a href="#categories">Roadmap</a>
+      <a class="nav-cta" href="mailto:yjdingxin@yjdingxin.com?subject=OEM%20Outdoor%20Knife%20Inquiry">Request Quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">OEM / ODM Outdoor Tool Manufacturer Since 2014</p>
+        <h1>Outdoor knives built for serious brands and practical field use.</h1>
+        <p class="hero-copy">MEIJI Outdoor manufactures fixed blade knives, folding knives, Damascus models, and multi-tools for camping, fishing, field work, and private-label outdoor programs.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:yjdingxin@yjdingxin.com?subject=OEM%20Outdoor%20Knife%20Inquiry">Start an OEM Inquiry</a>
+          <a class="button button-secondary" href="https://www.meijioutdoor.com/all-products.html">View Current Products</a>
+        </div>
+        <div class="hero-metrics" aria-label="Factory highlights">
+          <div class="metric"><strong>2014</strong><span>Factory established</span></div>
+          <div class="metric"><strong>50,000 m²</strong><span>Production facility</span></div>
+          <div class="metric"><strong>140</strong><span>Factory staff</span></div>
+          <div class="metric"><strong>OEM</strong><span>Logo, packaging, materials</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Product Lines</p>
+          <h2>Export-ready outdoor knives for retail, wholesale, and private label.</h2>
+        </div>
+        <p>Build a tighter product story around knives first, then extend into camp cooking tools and carry systems as related outdoor equipment.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="assets/fixed-blade-camping-knife.jpg" alt="Fixed blade camping knife with sheath">
+          <div class="product-body">
+            <h3>Fixed Blade Camping Knives</h3>
+            <p>Durable field knives with sheath options for camping, fishing, and utility use.</p>
+            <ul class="spec-list">
+              <li><span>Blade</span><strong>3Cr13 / D2 options</strong></li>
+              <li><span>Handle</span><strong>ABS / G10 / wood</strong></li>
+              <li><span>Custom</span><strong>Logo, color, sheath</strong></li>
+            </ul>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/folding-knife-g10.jpg" alt="Folding outdoor knife with textured handle">
+          <div class="product-body">
+            <h3>Folding & EDC Knives</h3>
+            <p>Compact folding knives for everyday carry programs, camping kits, and outdoor retail lines.</p>
+            <ul class="spec-list">
+              <li><span>Blade</span><strong>D2 / stainless steel</strong></li>
+              <li><span>Handle</span><strong>G10 / micarta / metal</strong></li>
+              <li><span>Finish</span><strong>Stonewash, black, satin</strong></li>
+            </ul>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/damascus-pocket-knife.jpg" alt="Damascus folding pocket knife">
+          <div class="product-body">
+            <h3>Damascus & Premium Series</h3>
+            <p>Higher-perceived-value models for gift sets, specialty shops, and outdoor brand collections.</p>
+            <ul class="spec-list">
+              <li><span>Blade</span><strong>Layered Damascus</strong></li>
+              <li><span>Handle</span><strong>Wood, shell, bone</strong></li>
+              <li><span>Use</span><strong>Gift, retail, collector</strong></li>
+            </ul>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/outdoor-survival-tool.jpg" alt="Outdoor multi-function survival tool">
+          <div class="product-body">
+            <h3>Multi-Tools & Kits</h3>
+            <p>Portable tools for compact outdoor kits, promotional sets, and survival accessory programs.</p>
+            <ul class="spec-list">
+              <li><span>Format</span><strong>Knife, plier, key tool</strong></li>
+              <li><span>Packaging</span><strong>Hard case, pouch, box</strong></li>
+              <li><span>Program</span><strong>ODM and bundled sets</strong></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="oem">
+      <div class="split">
+        <img src="assets/factory-capability.png" alt="MEIJI factory production workshop">
+        <div>
+          <p class="eyebrow">Factory Capability</p>
+          <h2>One supplier for product development, production, QC, and export packing.</h2>
+          <p class="wide-copy">Yangjiang Meiji Industry & Trade Co., Ltd. works with outdoor brands, wholesalers, importers, and promotional product buyers that need stable quality, practical customization, and responsive communication.</p>
+          <ul class="capability-list">
+            <li><strong>OEM / ODM development</strong>Custom blade shape, handle material, finish, logo placement, sheath, and packaging.</li>
+            <li><strong>Engineering support</strong>R&D team support for samples, structure adjustments, and cost-performance choices.</li>
+            <li><strong>Quality control</strong>Dedicated QC checks for appearance, assembly, blade fit, surface finish, and packing.</li>
+            <li><strong>Export communication</strong>English inquiry support with response targets for sample, quote, and order details.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">OEM Workflow</p>
+          <h2>A clear path from idea to shipment.</h2>
+        </div>
+        <p>Use this process on product pages and inquiry pages so overseas buyers understand what to send and what happens next.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-step">
+          <span>1</span>
+          <h3>Requirement Review</h3>
+          <p>Share target market, quantity, product type, material, and packaging needs.</p>
+        </article>
+        <article class="process-step">
+          <span>2</span>
+          <h3>Quotation</h3>
+          <p>Confirm specifications, estimated MOQ, unit price, sample cost, and lead time.</p>
+        </article>
+        <article class="process-step">
+          <span>3</span>
+          <h3>Sampling</h3>
+          <p>Prepare samples for handle, blade finish, logo, sheath, and packaging approval.</p>
+        </article>
+        <article class="process-step">
+          <span>4</span>
+          <h3>Production QC</h3>
+          <p>Control surface finish, assembly, function, labeling, and carton packing.</p>
+        </article>
+        <article class="process-step">
+          <span>5</span>
+          <h3>Shipment Support</h3>
+          <p>Support export packing, product documents, and market-specific compliance review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="categories">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Category Roadmap</p>
+          <h2>Grow wider without making the store feel scattered.</h2>
+        </div>
+        <p>The site should expand through related outdoor use cases, not through unrelated products. Keep knives as the anchor and add categories that make the same buyer stay longer.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-tile">
+          <h3>Outdoor Knives</h3>
+          <p>The core category: fixed blade knives, folding knives, fishing knives, Damascus knives, and multi-tools.</p>
+        </article>
+        <article class="category-tile">
+          <h3>BBQ & Camp Cooking</h3>
+          <p>Add grill tools, camp cooking tools, and outdoor BBQ sets only after product pages and images are ready.</p>
+        </article>
+        <article class="category-tile">
+          <h3>Outdoor Bags & Carry</h3>
+          <p>Start with knife rolls, tool pouches, EDC bags, BBQ tool cases, and camping organizer bags.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dark-cta" id="quote">
+      <div>
+        <p class="eyebrow">Business Inquiry</p>
+        <h2>Tell us your market, quantity, and product idea. We will help shape it into an OEM program.</h2>
+        <p>For a faster quote, include blade material, handle material, quantity, logo method, packaging style, target price, destination market, and any compliance requirements from your importer or retailer.</p>
+      </div>
+      <aside class="rfq-box" aria-label="RFQ checklist">
+        <h3>Recommended RFQ Details</h3>
+        <ul>
+          <li>Product type and reference photo</li>
+          <li>Estimated order quantity</li>
+          <li>Blade and handle material</li>
+          <li>Logo, color, sheath, and packaging needs</li>
+          <li>Target market and delivery timeline</li>
+        </ul>
+        <a class="button button-primary" href="mailto:yjdingxin@yjdingxin.com?subject=OEM%20Outdoor%20Product%20RFQ&body=Product%20type%3A%0AQuantity%3A%0AMaterial%3A%0ALogo%20%2F%20Packaging%3A%0ATarget%20market%3A%0ATimeline%3A">Email RFQ to MEIJI</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>MEIJI Outdoor | Yangjiang Meiji Industry & Trade Co., Ltd.</span>
+      <span><a href="mailto:yjdingxin@yjdingxin.com">yjdingxin@yjdingxin.com</a> · <a href="tel:+8613719876486">+86-13719876486</a></span>
+    </div>
+  </footer>
+</body>
+</html>
